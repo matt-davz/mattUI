@@ -8,7 +8,7 @@ export interface data {
 export interface selectedData {
     img: string,
     text: string,
-    amount: number
+    amount?: number
 }
 
 export interface SelectorProps {
@@ -22,7 +22,8 @@ const Selector: React.FunctionComponent<SelectorProps> = (props) => {
 
   const [amount, setAmount] = useState<number>(0)
   const [selected,setSelected] = useState<boolean>(false)
-  const [term,setTerm] = useState<string>("") //need condition so that if the term is empty it wikll not show all the data
+  const [term,setTerm] = useState<string>("") // TODO: need condition so that if the term is empty it wikll not show all the data
+  
 
   return (
     <div>Selector</div>
