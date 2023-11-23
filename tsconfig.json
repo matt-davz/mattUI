@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, //allows to import files with multiple exports as one
+    "declaration": true, //allows so that when a user uses the component library they won't need to install typescript types
+    "esModuleInterop": true,
+    "jsx": "react", //this allows for jsx files to be compiled to react
+    "lib": ["es5", "ES2015","ES2016","DOM","ESNext"], //this allows for the use of es6 features
+    "types": ["node"], //this allows for the use of node types
+    "module": "ES2015", //allows for use with react
+    "moduleResolution": "node", 
+    "noImplicitAny": true, //forces you to declare every variable
+    "noUnusedLocals": true, //forces you to use every variable
+    "outDir": "dist/esm", //this is where the compiled files will be placed,
+    "sourceMap": true, //allows for debugging
+    "strict": true,
+    "target": "es6"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"], //this is where the source files are located
+}
